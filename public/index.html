@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Socket.io simple chat</title>
+      <link rel="stylesheet" href="/style.css" />
+   </head>
+   <body>
+      <div class="container">
+         <div class="inbox">
+            <div class="inboxPeople">
+               <h4>Active users</h4>
+            </div>
+            <div class="inboxMessages">
+               <div class="messagesHistory" id="messagesHistory"></div>
+            </div>
+         </div>
+         <div class="typing"></div>
+         <form class="messageForm">
+            <input type="text" class="messageFormInput" placeholder="Type a message" />
+            <button class="messageFormButton" type="submit">
+            Enter
+            </button>
+         </form>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+      <script src="main.js"></script>
+   </body>
+</html>
+
